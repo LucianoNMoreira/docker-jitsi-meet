@@ -10,6 +10,8 @@ services:
             - '${HTTPS_PORT}:443'
         volumes:
             - ${CONFIG}/web:/config:Z
+            - ${CONFIG}/web/icon.svg:/usr/share/jitsi-meet/images/logo.svg:Z
+            - ${CONFIG}/web/watermark.svg:/usr/share/jitsi-meet/images/watermark.svg:Z
             - ${CONFIG}/web/crontabs:/var/spool/cron/crontabs:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
         environment:
