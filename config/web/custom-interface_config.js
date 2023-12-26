@@ -9,3 +9,4 @@
  */
 
 interfaceConfig.DEFAULT_WELCOME_PAGE_LOGO_URL = 'images/watermark.svg';
+interfaceConfig.APP_NAME = 'Inovenow Meet';
